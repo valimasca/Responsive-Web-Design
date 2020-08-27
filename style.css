@@ -1,0 +1,103 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    color: red;
+    font-family: monospace;
+}
+
+#sidenav {
+    background-color: blue;
+    height: 100%;
+}
+
+#maincontent{
+    height: 100vh;
+}
+
+#header, #footer, .image, .text{
+    height: 25vh;
+}
+
+.grid{
+    width: auto;
+    height: 100vh;
+}
+
+.grid:after{
+    content: "";
+    clear: both;
+}
+
+.row{
+    height: 100%;
+    width: 100%;
+    float: left;
+  
+}
+
+[class*='col-']{
+    float: left;
+    padding-right: 20px;
+    border: black solid 1px;
+}
+
+[class*='col-']:last-of-type{
+    padding-right: 0;
+} 
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+/* .col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.67%;
+}
+.col-3{
+    width: 25%;
+} */
+.col-4{
+    width: 33.33%;
+}
+/* .col-5{
+    width: 41.67%;
+} */
+ .col-6{
+    width: 50%;
+}
+/*
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.67%;
+}
+.col-9{
+    width: 75%;
+} */
+.col-10{
+    width: 83.33%;
+}
+/* .col-11{
+    width: 91.67%;
+} */
+.col-12{
+    width: 100%;
+}
+
+#header,  #footer {
+    background-color: lightblue;
+}
+
+#text1, #text2, #text3 {
+    background-color: lightcoral;
+}
+
+#img1, #img2 {
+    background-color: lightgreen;
+}
